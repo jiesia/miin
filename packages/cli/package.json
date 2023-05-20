@@ -1,0 +1,19 @@
+{
+  "name": "@mini/cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "bin": {
+    "mini": "bin/index.js"
+  },
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "@mini/bundler": "workspace:*",
+    "@mini/core": "workspace:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

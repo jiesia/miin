@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "allowJs": false,
+    "target": "ES2015",
+    "declaration": true,
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "strict": true,
+    "moduleResolution": "node"
+  }
+}

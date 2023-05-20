@@ -1,0 +1,15 @@
+{
+  "name": "@mini/bundler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "@mini/core": "workspace:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

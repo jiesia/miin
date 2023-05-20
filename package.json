@@ -1,0 +1,17 @@
+{
+  "name": "mini",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.1",
+    "concurrently": "^8.0.1",
+    "typescript": "^5.0.4"
+  }
+}
