@@ -1,4 +1,4 @@
 {
-  "entry": "index.html",
+  "entry": "./index.tsx",
   "output": "dist"
 }
