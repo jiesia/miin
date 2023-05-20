@@ -26,8 +26,12 @@ export class Builder {
     });
   }
 
-  // 生成模块依赖图, 递归
   buildModuleGraph(resolveParam: IResolveParam) {
+    this.buildModule(resolveParam);
+  }
+
+  // 递归解析单个模块的所有依赖
+  buildModule(resolveParam: IResolveParam) {
     // resolve ./App -> PATH/TO/App react -> node_modules/react
     const path = resolve(resolveParam, this.bundler.context);
     console.log(`> build ${path}`);
@@ -49,7 +53,7 @@ export class Builder {
     console.log(`> analyzeDeps ${JSON.stringify(deps, null, 2)}`);
 
     deps.forEach(dep => {
-      this.buildModuleGraph({
+      this.buildModule({
         source: dep.source,
         type: dep.type,
         parent: path,
